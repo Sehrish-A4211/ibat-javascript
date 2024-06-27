@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>basic calculator</title>
+    </head>
+    <body>
+        <h1>Basic Calculator</h1>
+      <div class="cal">
+        <div class="calculator">
+            <input type="text" placeholder="0" id="inputBox">
+        </div>
+        <div>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="operator">*</button>
+        </div>
+        <div>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="operator">-</button>
+        </div>
+        <div>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="operator">+</button>
+            </div>
+            <div>
+                <button class="operator del">C</button>
+                <button>0</button>
+                <button class="eqlbtn">=</button>
+                <button class="operator">/</button>
+                </div>
+            </div>
+    </body>
+    <style>
+       * {margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight:bold;
+    }
+    body{
+        text-align: center;
+          margin-top:23px;}
+    h1{
+         font-size:28px;}
+      
+       .cal{ 
+  background-color: #192332;
+  padding: 23px;
+  border-radius: 40px;
+  display: inline-block;
+  width:470px;
+  
+}
+       input{ 
+            border-radius: 21px;
+             background: #fff;
+            font-size:34px;
+             height: 65px;
+              width: 380px;
+              display: inline-block;
+              padding:24px;
+              text-align:right;
+        }
+        input::placeholder{
+            color:#000;
+          
+        }
+        .del
+        {font-size:20px;}
+         button{
+            width:60px;
+            height:60px;
+            margin:10px;
+            color:#ffffff;
+            background-color: #000;
+            font-size:24px;
+            cursor:pointer;
+            border-radius:9px;
+         }
+         button:hover{
+            color:#ffffff;
+            background-color:chocolate;
+         }
+  .eqlbtn{
+    background-color:chocolate;
+  }
+  .operator{
+    color:chocolate;
+  }
+    </style>
+    <script>
+        let display=document.getElementById('inputBox');
+        let buttons=document.querySelectorAll('button');
+        let buttonsArray = Array.from(buttons);
+
+        let string ="";
+        buttonsArray.forEach(btn=> {
+            // console.log(btn);
+            btn.addEventListener('click',(event)=> {
+              if(event.target.innerHTML == 'C'){
+                string = ""; 
+                // string = string.substring(0, string.length-1);
+                display.value = string;
+                // console.log(event.target.innerHTML)
+              }else if 
+              (event.target.innerHTML == '='){
+                         string = eval(string);
+                        display.value = string;
+         }else{  
+                string += event.target.innerHTML;
+                display.value = string;
+             }
+ 
+            });
+        
+        });
+  
+    </script>
+</html>
