@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>Implicit conversion to Boolean</title>
+  </head>
+  <body>
+    <script>
+      document.write((num = !!0) + "<br>"); // !0 = true, !!0 = false
+      document.write((num = !!1) + "<br>"); // !1 = false, !!1 = true
+      document.write((str = !!"") + "<br>"); // !"" = true, !!"" = false
+      document.write((str = !!"Hello") + "<br>"); // !"Hello" = false, !!"Hello" = true
+    </script>
+  </body>
+</html>

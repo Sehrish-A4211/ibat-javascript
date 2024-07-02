@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Converting to Number explicitly using constructor</title>
+  </head>
+  <body>
+    <script>
+      num = +"200"; // Using the unary operator
+      document.write(num + "<br/><br/>");
+
+      //parseFloat() - GLOBAL function
+      document.write("parseFloat()" + "<br>");
+      document.write(parseFloat(10.22) + "<br>");
+      document.write(parseFloat("10") + "<br>");
+      document.write(parseFloat("10.33") + "<br>");
+      document.write(parseFloat("34 45 66") + "<br>");
+      document.write(parseFloat("IBAT") + "<br><br/>");
+
+      //parseInt() - GLOBAL function
+      document.write("parseInt()" + "<br>");
+      document.write(parseInt(10) + "<br>");
+      document.write(parseInt("10") + "<br>");      
+      document.write(parseInt("34 45 66") + "<br>");
+      document.write(parseInt("Javascript") + "<br>");
+      document.write(parseInt("10.33"));
+    </script>
+  </body>
+</html>

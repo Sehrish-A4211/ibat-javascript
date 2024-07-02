@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>control flow - throw</title>
+  </head>
+  <body>
+    <script>
+
+      function getRectArea(width, height) {
+        if (isNaN(width) || isNaN(height)) {
+          throw new Error('Parameter is not a number!');
+        }
+        return width * height;
+      }
+
+      try {
+        document.write(getRectArea(3, 3));
+        document.write('<br>');
+        document.write(getRectArea(3, 'A'));
+      } catch (e) {
+        document.write(e);
+      }
+    </script>
+  </body>
+</html>

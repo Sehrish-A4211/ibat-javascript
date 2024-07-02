@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Converting date to string / number</title>
+  </head>
+  <body>
+    <script>
+      //block scoped
+      let date = new Date();
+      
+      let numberDate = date.getTime(); //epoch time - 1st of January 1970
+      document.write("The Numeric date is: " + numberDate + "<br/>");
+
+      let dateString = date.toString();
+      document.write("The string date is: " + dateString + "<br/>");
+    </script>
+  </body>
+</html>

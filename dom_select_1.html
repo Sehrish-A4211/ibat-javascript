@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>DOM - getElementById()</title>
+  </head>
+  <body>
+    <p id="para1">This is my first paragraph.</p>
+    <p id="para2">This is my second paragraph.</p>
+    <script>
+      //ids are used as unique identifiers for the HTML elements
+      const paragraph1 = document.getElementById("para1");
+      document.write(paragraph1);
+
+      document.write("<br>");
+      
+      const paragraph2 = document.getElementById("para2");
+      document.write(paragraph2.innerHTML);
+    </script>
+  </body>
+</html>

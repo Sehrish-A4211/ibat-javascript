@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>DOM - querySelectorAll()</title>
+  </head>
+  <body>
+    <h1>Favorite TV shows</h1>
+    <ul class="list">
+      <li>Golden Girls</li>
+      <li>Archer</li>
+      <li>Rick and Morty</li>
+      <li>The Crown</li>
+    </ul>
+    <script>
+      //finds all of the elements that match the CSS selector
+      //and returns a list of all of those nodes
+      const listItems = document.querySelectorAll("ul > li");
+      document.write(listItems);
+
+      document.write("<br>");
+      
+      document.write(listItems.item(0).innerHTML);
+
+      document.write("<br>");
+
+      listItems.forEach((item) => {
+        document.write(item);
+      });
+    </script>
+  </body>
+</html>

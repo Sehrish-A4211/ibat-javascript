@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>control flow - try...catch</title>
+  </head>
+  <body>
+    <script>
+      try {
+        nonExistentFunction();
+      } catch (error) {
+        document.write(error);
+        // Expected output: ReferenceError: nonExistentFunction is not defined
+        // (Note: the exact output may be browser-dependent)
+      }
+    </script>
+  </body>
+</html>
