@@ -1,0 +1,19 @@
+{
+  "name": "openapijs",
+  "version": "1.0.0",
+  "description": "my first openapi",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+ 
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sehrish",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "form-data": "^4.0.0",
+    "openai": "^4.52.7"
+  }
+}
