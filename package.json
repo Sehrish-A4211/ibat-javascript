@@ -1,16 +1,6 @@
 {
+  "type": "module",
   "dependencies": {
     "openai": "^4.52.7"
-  },
-  "name": "openai-apis",
-  "version": "1.0.0",
-  "description": "openai with javascript",
-  "main": "text-to-speech.js",
-  "type": "module",
-  "scripts": {
-    "start": "node text-to-speech.js"
-  },
-  "keywords": [],
-  "author": "Sehrish",
-  "license": "ISC"
+  }
 }
